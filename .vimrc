@@ -175,6 +175,7 @@ set background=dark
 set number
 set ruler
 set noswapfile
+set vb t_vb=
 
 "*****************************************************************************
 "" Abbreviations
