@@ -99,6 +99,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'othree/yajs.vim'
+NeoBundle 'othree/html5.vim'
 
 "" JSON syntax
 NeoBundle 'elzr/vim-json'
@@ -115,6 +116,8 @@ NeoBundle 'myhere/vim-nodejs-complete'
 "" VCL
 NeoBundle 'smerrill/vcl-vim-plugin'
 
+"" Color Scheme
+NeoBundle 'tomasr/molokai'
 
 call neobundle#end()
 
@@ -176,6 +179,9 @@ set number
 set ruler
 set noswapfile
 set vb t_vb=
+set list  " 不可視文字を表示する
+set listchars=tab:>-,trail:.  " タブを >--- 半スペを . で表示する
+colorscheme molokai
 
 "*****************************************************************************
 "" Abbreviations
@@ -279,7 +285,7 @@ autocmd FileType typescript setlocal sw=2 sts=2 ts=2 et
 "******************
 
 "******************
-let g:user_emmet_leader_key='<c-e>'
+"let g:user_emmet_leader_key='<c-e>'
 let g:user_emmet_settings = {
 			\    'variables': {
 			\      'lang': "ja"
@@ -347,8 +353,8 @@ let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
 "*****************************************************************************
 " Indent Width
 "*****************************************************************************"
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 augroup indent
   autocmd! FileType python setlocal shiftwidth=4 tabstop=4
