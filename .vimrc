@@ -332,6 +332,10 @@ let g:typescript_indent_disable = 1
 "******************
 " indentLine
 let g:indentLine_fileTypeExclude = ['help', 'nerdtree', 'calendar', 'thumbnail']
+" let g:indentLine_setColors = 1
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_leadingSpaceEnabled = 1
+" let g:indentLine_setConceal = 1
 "******************
 
 
